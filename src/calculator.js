@@ -14,10 +14,10 @@ class planetAge {
     return ageMercury;
   }
 
-  calcMercury() {
+  calcVenus() {
     var age = this.calcAge();
-    var ageMercury = (age / .62).toFixed(2);
-    return ageMercury;
+    var ageVenus = (age / .62).toFixed(2);
+    return ageVenus;
   }
 }
 
