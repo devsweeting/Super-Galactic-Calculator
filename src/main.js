@@ -15,6 +15,6 @@ $(document).ready(function() {
     const ageOnPlanet = birthday.calcPlanetAge(planet);
     console.log(planet);
     console.log(age);
-    console.log(ageOnPlanet);
+    console.log("Your age on this planet is " + ageOnPlanet);
   });
 });

@@ -10,7 +10,7 @@ class planetAge {
 
   calcPlanetAge(planet) {
     var age = this.calcAge();
-    var planetAge = (planet / .24).toFixed(2);
+    var planetAge = (age / planet).toFixed(2);
     return planetAge;
   }
 
