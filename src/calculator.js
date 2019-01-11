@@ -23,7 +23,6 @@ class planetAge {
 
   planetLifeExpectancy(planet, gender) {
     var lifeExpect = this.lifeExpectancy(gender);
-    debugger
     var planetLifeExpect = (lifeExpect / planet).toFixed(2);
     return planetLifeExpect
   }

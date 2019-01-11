@@ -10,7 +10,8 @@ $(document).ready(function() {
     const userBirthday = $("#birthday").val()
     const planet = $("#planet").val();
     const gender = $("#gender").val()
-    console.log(gender);
+    const smoker = $("input:checkbox[name=smoker]:checked").val()
+    console.log(smoker);
     const birthdayDate = new Date(userBirthday);
     const birthday = new planetAge(birthdayDate);
     const age = birthday.calcAge();

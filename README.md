@@ -6,7 +6,8 @@
 
 ## Description
 
-This application utilizes basic javascript fundamentals.
+This application utilizes basic javascript fundamentals. Life Expectancy is based of the American average for both males and females.
+info on how smoking affects life expectancy found here: https://www.usatoday.com/story/news/nation/2013/01/23/smoking-cessation-life-expectancy/1858913/
 
 ## Setup/Installation Requirements
 
