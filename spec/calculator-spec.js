@@ -2,38 +2,46 @@ import { planetAge } from './../src/calculator.js';
 
 describe('planetAge', function() {
 
-//   it('creates a user class of planetAge', function(){
-//     var userBirthday = ('March 14, 1995 03:24:00');
-//     var userBirthday = new Date;
-//     var user = new planetAge(userBirthday);
-//     expect(user.birthday).toEqual(userBirthday);
-// });
-
   it('it will calculate a users age', function() {
-    var userBirthday = ('March 14, 1995 03:24:00')
-    var user = new planetAge(userBirthday);
+    let userBirthday = ('March 14, 1995 03:24:00')
+    let user = new planetAge(userBirthday);
     let age = user.calcAge()
     expect(age).toEqual(23)
   });
 
   it('it will calculate a users age on Mercury', function() {
-    var userBirthday = ('March 14, 1995 03:24:00')
-    var birthday = new planetAge(userBirthday);
-    let ageMercury = birthday.calcMercury()
+    let userBirthday = ('03-14-1995')
+    let birthday = new Date(userBirthday)
+    let birthdayObj = new planetAge(birthday);
+    let planet = .24
+    let ageMercury = birthdayObj.calcPlanetAge(planet)
     expect(ageMercury).toEqual('95.83')
   })
 
   it('it will calculate a users age on Venus', function() {
-    var userBirthday = ('March 14, 1995 03:24:00')
-    var birthday = new planetAge(userBirthday);
-    let ageVenus = birthday.calcVenus()
+    let userBirthday = ('03-14-1995')
+    let birthday = new Date(userBirthday)
+    let birthdayObj = new planetAge(birthday);
+    let planet = .62
+    let ageVenus = birthdayObj.calcPlanetAge(planet)
     expect(ageVenus).toEqual('37.10')
   })
 
+  it('it will calculate a users age on Mars', function() {
+    let userBirthday = ('03-14-1995')
+    let birthday = new Date(userBirthday)
+    let birthdayObj = new planetAge(birthday);
+    let planet = 1.88
+    let ageMars = birthdayObj.calcPlanetAge(planet)
+    expect(ageMars).toEqual('12.23')
+  })
+
   it('it will calculate a users age on Jupiter', function() {
-    var userBirthday = ('March 14, 1995 03:24:00')
-    var birthday = new planetAge(userBirthday);
-    let ageJupiter = birthday.calcJupiter()
-    expect(ageJupiter).toEqual('1.94')
+    let userBirthday = ('03-14-1995')
+    let birthday = new Date(userBirthday)
+    let birthdayObj = new planetAge(birthday);
+    let planet = 11.68
+    let ageJupiter = birthdayObj.calcPlanetAge(planet)
+    expect(ageJupiter).toEqual('1.97')
   })
 })
