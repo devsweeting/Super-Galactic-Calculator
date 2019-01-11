@@ -1,9 +1,9 @@
 body {
-  background-color: #7FDBFF;
+  background-color: blue;
 }
 
 .card {
   padding: 30px;
-  background-color: blue;
+  background-color: red;
   border: black;
 }

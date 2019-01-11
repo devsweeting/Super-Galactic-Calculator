@@ -13,6 +13,8 @@ $(document).ready(function() {
     const birthday = new planetAge(birthdayDate);
     const age = birthday.calcAge();
     const ageOnPlanet = birthday.calcPlanetAge(planet);
+    const lifeExpect = birthday.lifeExpectancy();
+    console.log("Expect to live for another " + lifeExpect + " years!");
     console.log(planet);
     console.log(age);
     console.log("Your age on this planet is " + ageOnPlanet);
