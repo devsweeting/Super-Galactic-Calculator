@@ -1,23 +1,33 @@
-# OG Flowers Dispensary
+# Super Galactic Calculator
 
-#### A practice Ecommerce store for all your cannabis needs, 12/16/18
+#### A application that calculates a users age based on the year cycles of other planets.
 
 #### By Devin Sweeting
 
 ## Description
 
-This application utilizes our knowledge from the week 1 ruby on rails coursework at Epicodus. It practices the RESTful routing, Active record, and seeding a database.
+This application utilizes basic javascript fundamentals.
 
 ## Setup/Installation Requirements
 
-* This application was built on Ruby 2.5.1 on Rails 5.2.2, using PostgreSQL as a database server. If you have these or equivalent versions installed, you're ready to install this repository:
-* Clone this repository `$ git clone https://github.com/devsweeting/OG-Flowers-Dispensary.git`.
-* Install dependencies: `$ bundle install`
-* Start your Postgres server: `$ postgres`
+* This application was built on Webpack .....
+* Clone this repository `https://github.com/devsweeting/Super-Galactic-Calculator.git`.
+* Install dependencies: `$ npm install` then `npm run start`
+<!-- * Start your Postgres server: `$ postgres`
 * Create and migrate the databases: `$ rails db:setup`
 * Seed your databases: `'$ rails db:seed'`
 * Open a new terminal tab, and start the project `$ rails s`
-* Open your web browser, point to http://localhost:3000/ (most common configuration).
+* Open your web browser, point to http://localhost:3000/ (most common configuration). -->
+
+
+## Specs
+
+* Returns user their age in Mercury Years.
+* Returns their age in Venus years.
+* Returns their age in Mars years.
+* Returns their age in Jupiter years.
+* Determines how many years a user has left to live on each planet. Depending on users lifestyle.
+* Will return the number of years lived past the average live life expectancy of planet of given planet
 
 
 ## Known Bugs
@@ -30,9 +40,9 @@ If you have any questions about this application please contact Devin Sweeting v
 
 ## Technologies Used
 
-Built in Ruby 2.5.1 on Rails 5.2.2
+<!-- Built in Ruby 2.5.1 on Rails 5.2.2
 Uses Postgres as SQL server
-Seeded with Faker
+Seeded with Faker -->
 
 ### License
 
