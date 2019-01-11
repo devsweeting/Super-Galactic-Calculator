@@ -14,15 +14,16 @@ class planetAge {
     return planetAge;
   }
 
-  lifeExpectancy() {
+  lifeExpectancy(gender) {
     var age = this.calcAge();
-    const averageLifeExpectancyInYears = 78.7
+    let averageLifeExpectancyInYears = gender
     let lifeExpect = (averageLifeExpectancyInYears - age);
     return lifeExpect
   }
 
-  planetLifeExpectancy(planet) {
-    var lifeExpect = this.lifeExpectancy();
+  planetLifeExpectancy(planet, gender) {
+    var lifeExpect = this.lifeExpectancy(gender);
+    debugger
     var planetLifeExpect = (lifeExpect / planet).toFixed(2);
     return planetLifeExpect
   }
