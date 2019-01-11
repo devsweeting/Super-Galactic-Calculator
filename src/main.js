@@ -7,11 +7,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 $(document).ready(function() {
   $(".userInput").submit(function(event) {
     event.preventDefault();
-    const userBirthday = $("#birthday").val()
+    const userBirthday = $("#birthday").val();
     const planet = $("#planet").val();
-    const gender = $("#gender").val()
+    let gender = $("#gender").val();
+    console.log(gender);
     const smoker = $("input:checkbox[name=smoker]:checked").val()
     console.log(smoker);
+    if (smoker === "on") {
+      gender -= 10;
+    };
+    console.log(gender);
     const birthdayDate = new Date(userBirthday);
     const birthday = new planetAge(birthdayDate);
     const age = birthday.calcAge();
