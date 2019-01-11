@@ -5,11 +5,16 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 $(document).ready(function() {
-  $('#userBirthday').submit(function(event) {
+  $(".userInput").submit(function(event) {
     event.preventDefault();
-    const birthday = ('March 14, 1995 03:24:00');
-    const planetUser = new planetAge(birthday);
-    const dansBirthday = ("April 26, 1982 07:00:00");
-    const dansPlanetAge = new planetAge(dansBirthday);
+    const userBirthday = $("#birthday").val()
+    const planet = $("#planet").val();
+    const birthdayDate = new Date(userBirthday);
+    const birthday = new planetAge(birthdayDate);
+    const age = birthday.calcAge();
+    const ageOnPlanet = birthday.calcPlanetAge(planet);
+    console.log(planet);
+    console.log(age);
+    console.log(ageOnPlanet);
   });
 });
