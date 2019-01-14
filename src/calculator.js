@@ -1,7 +1,7 @@
 class planetAge {
   constructor(birthday) {
     this.birthday = new Date(birthday);
-}
+  }
 
   calcAge() {
     const today = Date.now();
