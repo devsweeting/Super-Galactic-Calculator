@@ -1,6 +1,6 @@
 # Super Galactic Calculator
 
-#### A application that calculates a users age based on the year cycles of other planets.
+#### A application that calculates a users age based on the year cycles of other planets, and will also displa yuser lifeexpectancy based on gender and smoking status.
 
 #### By Devin Sweeting
 
@@ -14,11 +14,7 @@ info on how smoking affects life expectancy found here: https://www.usatoday.com
 * This application was built on Webpack .....
 * Clone this repository `https://github.com/devsweeting/Super-Galactic-Calculator.git`.
 * Install dependencies: `$ npm install` then `npm run start`
-<!-- * Start your Postgres server: `$ postgres`
-* Create and migrate the databases: `$ rails db:setup`
-* Seed your databases: `'$ rails db:seed'`
-* Open a new terminal tab, and start the project `$ rails s`
-* Open your web browser, point to http://localhost:3000/ (most common configuration). -->
+* To run test run command   `npm run test`
 
 
 ## Specs
@@ -41,9 +37,7 @@ If you have any questions about this application please contact Devin Sweeting v
 
 ## Technologies Used
 
-<!-- Built in Ruby 2.5.1 on Rails 5.2.2
-Uses Postgres as SQL server
-Seeded with Faker -->
+Webpack, Karma & Jasmine, ESlint, ES6 Javascript.
 
 ### License
 
