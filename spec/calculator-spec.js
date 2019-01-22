@@ -50,35 +50,39 @@ describe('planetAge', function() {
     let birthday = new Date(userBirthday)
     let birthdayObj = new planetAge(birthday);
     let planet = .24;
-    let ageJupiter = birthdayObj.calcPlanetAge(planet)
-    const planetLifeExpect = birthdayObj.planetLifeExpectancy(planet);
-    expect(planetLifeExpect).toEqual('232.08')
+    let gender = 78.7;
+    let ageJupiter = birthdayObj.calcPlanetAge(planet);
+    const planetLifeExpect = birthdayObj.planetLifeExpectancy(planet, gender);
+    expect(planetLifeExpect).toEqual('232.08');
   })
 
-  it('it will calculate a users life expectancy on Venus', function() {
-    let userBirthday = ('03-14-1995')
-    let birthday = new Date(userBirthday)
+  it('it will calculate a users life expectancy on Venus if gender option niether is chosen', function() {
+    let userBirthday = ('03-14-1995');
+    let birthday = new Date(userBirthday);
     let birthdayObj = new planetAge(birthday);
-    let planet = .62
-    const planetLifeExpect = birthdayObj.planetLifeExpectancy(planet);
-    expect(planetLifeExpect).toEqual('89.84')
+    let planet = .62;
+    let gender = 78.7;
+    const planetLifeExpect = birthdayObj.planetLifeExpectancy(planet, gender);
+    expect(planetLifeExpect).toEqual('89.84');
   })
 
   it('it will calculate a users life expectancy on Mars', function() {
-    let userBirthday = ('03-14-1995')
-    let birthday = new Date(userBirthday)
+    let userBirthday = ('03-14-1995');
+    let birthday = new Date(userBirthday);
     let birthdayObj = new planetAge(birthday);
-    let planet = 1.88
-    const planetLifeExpect = birthdayObj.planetLifeExpectancy(planet);
-    expect(planetLifeExpect).toEqual('29.63')
+    let planet = 1.88;
+    let gender = 78.7;
+    const planetLifeExpect = birthdayObj.planetLifeExpectancy(planet, gender);
+    expect(planetLifeExpect).toEqual('29.63');
   })
 
   it('it will calculate a users life expectancy on Jupiter', function() {
-    let userBirthday = ('03-14-1995')
+    let userBirthday = ('03-14-1995');
     let birthday = new Date(userBirthday);
     let birthdayObj = new planetAge(birthday);
     let planet = 11.68;
-    const planetLifeExpect = birthdayObj.planetLifeExpectancy(planet);
-    expect(planetLifeExpect).toEqual('4.77')
+    let gender = 78.7;
+    const planetLifeExpect = birthdayObj.planetLifeExpectancy(planet, gender);
+    expect(planetLifeExpect).toEqual('4.77');
   })
 })
